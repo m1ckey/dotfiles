@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+sudo echo 'starting system upgrade'
+sudo pacman-mirrors --country Germany,France,Austria,Switzerland,Czech
+yay -Syyu --noconfirm --sudoloop $@ 
+shutdown +2

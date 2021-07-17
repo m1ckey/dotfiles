@@ -1,0 +1,11 @@
+[Unit]
+Description=mkhometemp
+
+[Service]
+Type=oneshot
+User=m1ckey
+WorkingDirectory=/home/m1ckey
+ExecStart=/home/m1ckey/bin/mkhometemp
+
+[Install]
+WantedBy=default.target
