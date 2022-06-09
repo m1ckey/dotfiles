@@ -3,6 +3,6 @@
 set -e
 
 sudo echo 'starting system upgrade'
-sudo pacman-mirrors --country Germany,France,Austria,Switzerland,Czech
+sudo pacman-mirrors --country Germany,France,Austria,Switzerland,Czechia
 yay -Syyu --noconfirm --sudoloop $@ 
 shutdown +2
